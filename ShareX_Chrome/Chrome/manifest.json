@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "ShareX",
-  "version": "1.0.0",
-  "description": "Adds 'Upload with ShareX' button to image and text selection context menu.",
+  "version": "1.0.1",
+  "description": "Adds 'Upload with ShareX' button to image, video, audio and text selection context menu.",
   "author": "ShareX Team",
   "homepage_url": "https://getsharex.com",
   "icons": {

@@ -1,7 +1,7 @@
 chrome.contextMenus.create({
     "id": "ShareX",
     "title": "Upload with ShareX",
-    "contexts": ["image", "selection"]
+    "contexts": ["selection", "image", "video", "audio"]
 });
 
 chrome.contextMenus.onClicked.addListener(onClicked);

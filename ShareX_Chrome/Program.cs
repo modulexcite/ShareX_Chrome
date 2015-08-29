@@ -59,14 +59,7 @@ namespace ShareX_Chrome
 
                     if (!string.IsNullOrEmpty(argument))
                     {
-                        string path;
-
-#if DEBUG
-                        path = GetAbsolutePath(@"..\..\..\..\ShareX\ShareX\bin\Debug\ShareX.exe");
-#else
-                        path = GetAbsolutePath("ShareX.exe");
-#endif
-
+                        string path = GetAbsolutePath("ShareX.exe");
                         Process.Start(path, argument);
                     }
                 }
