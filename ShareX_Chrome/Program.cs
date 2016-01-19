@@ -29,12 +29,25 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Windows.Forms;
 
 namespace ShareX_Chrome
 {
     internal class Program
     {
         private static void Main(string[] args)
+        {
+            try
+            {
+                Run();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "ShareX Chrome - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private static void Run()
         {
             string input = GetInput();
 
